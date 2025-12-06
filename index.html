@@ -1,35 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <hi>Hello I'm Edison</hi>
-    <p>Welcom to my personal Portfolio page!</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edison Omosivie | Web Developer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #ffffff;
+    }
 
-    <hr>
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #111111;
+    }
 
-    <h2>📌 About Me</h2>
-    <p>I'm an aspiring web developer learning HTML. I love building websites and solving problems</p>
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <il>Html</il>
-      <il>Css (learning soon)</il>
-      <il>Javascript (coming next)</il>
-    </ul>
+    header p {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+    }
 
-    <h2>📂 projects</h2>
-    <ol>
-      <li>My First Website</li>
-      <li>Birthday Invitation page</li>
-      <li>Simple Resume Page</li>
-    </ol>
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-    <h2>📞 Contact Me</h2>
-    <p>Email: <a href="mailto:edisonomosivie@gmail.com">edisonomosivie@gmail</a></p>
-    <
-    </ul>
-  </body>
+    h2 {
+      color: #00c4ff;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #00c4ff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #00c4ff;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      background: #111111;
+    }
+
+    a {
+      color: #00c4ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Edison Omosivie</h1>
+    <p>Frontend & Backend Web Developer • Building Clean & Responsive Websites</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Crypto Website UI</h3>
+        <p>A clean and responsive crypto landing page built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>Modern landing page design with smooth layout and responsive structure.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Login / Signup Page</h3>
+        <p>Simple and clean authentication UI for web applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a self-taught web developer focused on building clean, responsive websites using HTML, CSS, and JavaScript. I continuously improve my skills and help businesses bring their ideas online.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Name: Edison Omosivie</p>
+    <p>Email: edisonomosivie@gmail.com</p>
+    <p>WhatsApp: 09066297207</p>
+    <p>X (Twitter): <a href="https://x.com/Kblood3857" target="_blank">@Kblood385u</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Edison — Web Developer</p>
+  </footer>
+</body>
 </html>
