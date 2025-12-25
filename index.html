@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edison Omosivie | Web Developer Portfolio</title>
+  <title>Edison Omosivie | Portfolio</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: #ffffff;
+    }
+
+    body {
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
+      background: #111;
+      color: #fff;
       padding: 60px 20px;
       text-align: center;
-      background: #111111;
     }
 
     header h1 {
@@ -24,102 +31,101 @@
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #bbbbbb;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
+      max-width: 700px;
       margin: auto;
-    }
-
-    h2 {
-      color: #00c4ff;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #00c4ff;
-      display: inline-block;
-      padding-bottom: 5px;
+      font-size: 1.1rem;
+      color: #ddd;
     }
 
     .projects {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .project-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
 
     .project-card {
-      background: #1a1a1a;
-      padding: 20px;
+      background: #fff;
       border-radius: 12px;
-      border: 1px solid #333;
-      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
     }
 
     .project-card h3 {
-      margin-top: 0;
-      color: #00c4ff;
+      margin-bottom: 10px;
     }
 
     .project-card p {
-      font-size: 0.9rem;
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
     }
 
     footer {
+      background: #111;
+      color: #ccc;
       text-align: center;
-      padding: 30px;
-      color: #777;
-      background: #111111;
-    }
-
-    a {
-      color: #00c4ff;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Edison Omosivie</h1>
-    <p>Frontend & Backend Web Developer • Building Clean & Responsive Websites</p>
+    <p>Frontend Web Developer | HTML, CSS, JavaScript | Freelance projects & portfolio showcase</p>
   </header>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="projects">
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      
+      <!-- Project 1: Logistics -->
       <div class="project-card">
-        <h3>Crypto Website UI</h3>
-        <p>A clean and responsive crypto landing page built with HTML, CSS, and JavaScript.</p>
+        <h3>Transflow Logistics</h3>
+        <p>A logistics company website built with HTML & CSS.</p>
+        <a href="https://edisonforgeweb.github.io/Transflow-Logistics/" target="_blank">View Project</a>
+      </div>
+      
+      <!-- Project 2: Restaurant -->
+      <div class="project-card">
+        <h3>Delish Restaurant</h3>
+        <p>A responsive restaurant website with image-based menu, deployed on GitHub Pages.</p>
+        <a href="https://edisonforgeweb.github.io/delish-restaurant/" target="_blank">View Project</a>
       </div>
 
-      <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>Modern landing page design with smooth layout and responsive structure.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Login / Signup Page</h3>
-        <p>Simple and clean authentication UI for web applications.</p>
-      </div>
+      <!-- You can add more projects here -->
+      
     </div>
   </section>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a self-taught web developer focused on building clean, responsive websites using HTML, CSS, and JavaScript. I continuously improve my skills and help businesses bring their ideas online.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Name: Edison Omosivie</p>
-    <p>Email: edisonomosivie@gmail.com</p>
-    <p>WhatsApp: 09066297207</p>
-    <p>X (Twitter): <a href="https://x.com/Kblood3857" target="_blank">@Kblood385u</a></p>
-  </section>
-
   <footer>
-    <p>© 2025 Edison — Web Developer</p>
+    <p>© 2025 Edison Omosivie. All rights reserved. | Follow me on X: <a href="https://x.com/EdisonForgeWeb" target="_blank">@EdisonForgeWeb</a></p>
   </footer>
+
+
 </body>
 </html>
